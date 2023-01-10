@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.index-container {
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #0000004e;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.index-form {
+    padding: 20px;
+}
+
+.index-form h2 {
+    color: #000000b6;
+    margin: 10px 0;
+}
+
+.from-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.from-group label {
+    color: #000000b6;
+    font-size: 20px;
+}
+
+.from-group input {
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.from-group select {
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.index-form button {
+    all: unset;
+    padding: 10px 0;
+    width: 100%;
+    background: blue;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-container {
+    max-width: 80%;
+    margin: auto;
+    background: aliceblue;
+    min-height: 100vh;
+}
+
+.send-chat {
+    background: blue;
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+}
+
+.send-chat input {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.send-chat button {
+    background: rgb(255, 0, 0);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.messages {
+    padding-top: 60px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    text-align: center;
+    background: blue;
+    color: #ffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.header h2{
+    margin: auto;
+}
+.header button{
+    all: unset;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.toastMsg {
+    text-align: center;
+    background: #00000053;
+    padding: 3px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.chatmsg{
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 20px;
+    border-left: 5px solid blue;
+    background-color: #0000ff50;
+}
+
+.chat{
+   color: #ffff;
+   font-size: 24px;
+
+}
+
+.username{
+    color: #ff0000;
+    font-size: 18px;
+}
+
+/* mediaquery */
+@media (max-width : 500px)  {
+    .chat-container{
+        margin: 0;
+        max-width : 100%;
+        background:#fff;
+    }
+    .send-chat{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    
+}
